@@ -44,8 +44,8 @@ Quickstart
   rate-limiting. You can keep registering your models to the default admin
   site and they will show up in the ratelimitbackend-enabled admin.
 
-* Add ``'ratelimitbackend.middleware.RateLimitMiddleware'`` to your
-  ``MIDDLEWARE_CLASSES``, or create you own middleware to handle rate limits.
+* Add ``'ratelimitbackend.middleware.RateLimitMiddleware'`` to ``MIDDLEWARE``
+  in your settings, or create you own middleware to handle rate limits.
   See the :ref:`middleware reference <middleware>`.
 
 * If you use ``django.contrib.auth.forms.AuthenticationForm`` directly,
